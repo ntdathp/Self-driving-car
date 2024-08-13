@@ -63,11 +63,13 @@ Link: [Dataset for YOLOv8](https://universe.roboflow.com/fall-detection-d9pcq/tr
 ### Training result:
 
 - Yolov8:
+- 
 ![yolov8rs](resource/model/yolov8_rs.png)
 ![yolov8rs](resource/model/cf_matrix.png)
 ![yolov8rs](resource/model/yolov8_loss.png)
 
 - CNN:
+- 
 ![cnn_rs](resource/model/cnn_loss.png)
 
 ### Self-driving model result:
