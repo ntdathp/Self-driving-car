@@ -39,7 +39,8 @@ The color image is converted to a grayscale image, then thresholding is applied 
 The frames, along with their corresponding steering angles and speeds, are recorded to train the CNN.
 The frames are saved in a folder named "IMG". 
 And a log file with the following structure is created to form the dataset:
-Path to frame   |  Sterring's angle    | Speed
+| Path to Frame | Steering Angle | Speed |
+|---------------|----------------|-------|
 
 ### CNN
 ![cnn](resource/model/cnn_struc.png)
