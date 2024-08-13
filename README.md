@@ -1,7 +1,7 @@
 # Self-driving-car
 The project focuses on building a driving control model in a simulated environment.
 
-### Simulated environment
+### Simulated environment:
 ![sim_environment](resource/project_overview/sim_en.png)
 
 The software has two modes:
@@ -17,7 +17,7 @@ The software has two modes:
 Additionally, the simulated environment also includes various traffic signs that the self-driving car model must recognize in order to control the vehicle and follow the correct route:
 ![sim_environment](resource/project_overview/traffic_sign.png)
 
-### Self-driving car control model
+### Self-driving car control model:
 ![overview](resource/project_overview/overview.png)
 
 - Input Image: The process starts with an image captured from the car's front camera, showing the road ahead.
@@ -30,26 +30,41 @@ Additionally, the simulated environment also includes various traffic signs that
 
 - Output: The CNN produces two key outputs: the steering angle and the speed of the vehicle. These outputs are then used to control the car's movement in the simulated environment, enabling it to follow the correct path based on the visual inputs.
 
-### Image processing for lane segmentation
+### Image processing for lane segmentation:
 ![Image processing](resource/img_processing/img_pro_rs.png)
 
 The color image is converted to a grayscale image, then thresholding is applied to transform it into a binary image. Morphological image processing is used to eliminate noise from the surrounding environment, such as traffic signs and tree canopies.
 
-### The dataset for training the CNN
+### The dataset for training the CNN:
 The frames, along with their corresponding steering angles and speeds, are recorded to train the CNN.
 The frames are saved in a folder named "IMG". 
 And a log file with the following structure is created to form the dataset:
 | Path to Frame | Steering Angle | Speed |
 |---------------|----------------|-------|
 
-### CNN
+### CNN:
 ![cnn](resource/model/cnn_struc.png)
 
 This architecture is designed to process image data from the vehicle's camera, extract relevant features through convolutional operations, and ultimately determine the appropriate control commands (steering angle and speed) to guide the vehicle autonomously.
 
-### PID controller for car's speed
+### PID controller for car's speed:
 ![pid](resource/project_overview/pid.png)
 
-### Dataset for YOLOv8
+### Dataset for YOLOv8:
 Link: [Dataset for YOLOv8](https://universe.roboflow.com/fall-detection-d9pcq/traffic_signs-b44bs/dataset/2)
 ![Dataset for YOLOv8](resource/train/yolov8_dts.png)
+
+### Training result:
+
+- Yolov8:
+![yolov8rs](resource/model/yolov8_rs.png)
+![yolov8rs](resource/model/cf_matrix.png)
+![yolov8rs](resource/model/yolov8_loss.png)
+
+- CNN:
+![cnn_rs](resource/model/cnn_loss.png)
+
+### Self-driving model result:
+Link: [Self-driving model result](https://www.youtube.com/watch?v=MrlXo3VNO34)
+
+![Self-driving model result](resource/project_overview/running.png)
