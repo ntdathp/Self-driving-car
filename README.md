@@ -1,6 +1,8 @@
 # Self-driving-car
 The project focuses on building a driving control model in a simulated environment.
 
+Link to result video: Self-driving model result
+
 - YoloV8.ipynb: training YoloV8
 - drive_onnx.py: Control the car with Yolov8 and CNN
 - model.py: training CNN
